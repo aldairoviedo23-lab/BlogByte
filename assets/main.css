@@ -1,0 +1,312 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  
+}
+
+body{
+    background-image: url(./imgs/bg.png);
+    font-family: 'Poppins' sans-serif;
+    font-size: 1.6rem;
+    font-weight: 900;
+    font-style: normal;
+    min-height: 100vh;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+img{
+    max-width: 100%;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+
+}
+
+/* Header determina el fondo*/
+header{
+    color: #E34467;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo {
+    display: flex;
+    gap: 0rem;
+    align-items: center; 
+}
+
+.logo img {
+    width: 300px;
+    margin-top: -50px;
+    padding: 10px;
+}
+
+.menu-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.navegacion a{
+    text-decoration: none;
+    color:#E34467;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale .2 ease;
+    padding: 3px;
+}
+
+.navegacion ul li a:hover {
+    border-bottom: 2px solid #7f0000;
+    color: #7f0000;
+    scale: 1.5;
+}
+
+.navegacion ul{
+    display: flex; 
+    gap: 8rem;
+    padding: 50px;
+    margin-top:-20%;
+
+}
+
+.navegacion li{
+    list-style: none;
+    
+}
+
+
+.contenedor-header { 
+    display: flex;
+    max-width: 140rem;
+    margin: 0 auto;
+    align-items: center;
+    padding: 4rem;
+    padding-bottom: 9rem;
+}
+
+.contenedor-header h1 {
+    font-weight: 800;
+    font-size: 4.5rem;
+}
+
+.contenedor-header p {
+    padding-right: 8rem;
+    color: #d4cecf;
+    line-height: 1.7;
+}
+
+.botones-header {
+    margin-top: 4rem;
+}
+
+
+.botones-header a:first-child {
+    background-color: #DE0030;
+    color: #fff;
+    padding: 1.3rem 2rem;
+    font-size: 1.4rem;
+    border-radius: .5rem;
+    margin-right: 1.5rem;
+    text-decoration: none;
+}
+
+
+.botones-header a:last-child {
+    background-color: #f5f5f5;
+    color: #E34467;
+    padding: 1.3rem 2rem;
+    font-size: 1.4rem;
+    border-radius: .5rem;
+    text-decoration: none;
+}
+
+.contenedor-header img{
+    width: 100%;
+}
+
+/**Estilo main*/
+
+
+
+.seccion-main {
+    margin: 0 auto;
+    max-width: 90rem;
+    padding: 8rem 0;
+}
+
+
+.seccion-main h2,
+.seccion-main p {
+    text-align: center;
+    color: #D5DBDB;
+}
+
+.seccion-main > h2 {
+    font-weight: 700;
+    font-size: 2.6rem;
+    color: #E34467;
+}
+
+.parrafo-titulo {
+     margin-bottom: 8rem;
+}
+
+.contenedor-articulos {
+    display: flex;
+    flex-direction: column;
+}
+
+.articulo {
+    border-bottom: 2px solid #525252;
+    padding:  4.8rem 0;
+}
+
+
+.articulo:nth-child(5) {
+    border-bottom: none;
+    margin-bottom: 2rem;
+}
+
+
+.etiqueta {
+   
+    color: #fd0000;
+    padding: .5rem 1rem;
+    font-size: 1.3rem;
+    border-radius: .5rem;
+}
+
+.span-lectura {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+
+/*Contenido del articulo*/
+
+.articulo h2 {
+    text-align: left;
+}
+
+.articulo h2 a {
+    color: #ff5f5f;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.articulo h2 a:hover {
+    color: #7f0000;
+    font-weight: 700;
+    font-size: 2rem;
+    background-color: #ffa372;
+
+}
+.articulo p {
+    text-align: left;
+    line-height: 1.6;
+    font-size: 1.5rem;
+}
+
+.masInformacion {
+    display: flex;
+    justify-content: space-between;
+}
+
+.articulo a {
+    text-decoration: none;
+    color: #ff5f5f;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.contenedorBtn {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.btnVerTodos {
+    text-decoration: none;
+    color: #fff;
+    background-color: #DE0030;
+    padding: 1.5rem 3rem;
+    border-radius: .5rem;
+}
+
+.btnVerTodos:hover { 
+    background-color: #7f0000;
+    scale: 1.1;
+}
+
+/* Footer */
+
+footer {
+  
+    border: 1px solid transparent;
+
+}
+
+.contenedorFooter {
+    color: #ff6c3e;
+    max-width: 130rem;
+    margin: 0 auto;
+    display: flex;
+    padding: 10rem 1rem;
+    justify-content: space-between;
+    
+
+}
+
+.contenedorFooter ul {
+    padding: 0;
+    
+}
+
+.contenedorFooter li {
+    list-style: none;
+}
+
+.contenedorFooter a {
+    text-decoration: none;
+    color: #D5DBDB;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+
+.contenedorFooter a:hover {
+     color: #ff0000;
+     scale: 1.1;
+}
+
+
+.contenedoFooterTwo {
+    
+    color: #fff;
+    padding: 1.5rem 0;
+}
+
+.footerFinal {
+    max-width: 120rem;
+    margin: 0 auto;
+    text-align: center;
+    color: #B3B2AE;
+    font-size: 1.5rem;
+    opacity: 50%;
+}
